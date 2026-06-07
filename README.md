@@ -23,7 +23,7 @@ Proyek ini dibangun menggunakan framework Java Swing dan mengikuti struktur pake
 
 1.  **Kloning Repositori:**
     ```bash
-    git clone <url-repositori-anda>
+    git clone https://github.com/Strioadjie/A-BANG.git
     ```
 
 2.  **Konfigurasi Basis Data:**
