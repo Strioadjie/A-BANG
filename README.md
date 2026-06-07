@@ -1,45 +1,45 @@
 # A-BANG
 
-A desktop-based Java application designed to streamline train ticketing operations. The system provides dedicated interfaces for administrators, staff members, and passengers, ensuring a structured workflow for ticket management and procurement.
+Aplikasi Java berbasis desktop yang dirancang untuk mempermudah operasional pemesanan tiket kereta api. Sistem ini menyediakan antarmuka khusus untuk administrator, pegawai, dan penumpang, memastikan alur kerja yang terstruktur untuk manajemen dan pengadaan tiket.
 
-## Architecture and Modules
+## Arsitektur dan Modul
 
-The project is built using the Java Swing framework and follows a modular package structure to separate concerns between different user roles:
+Proyek ini dibangun menggunakan framework Java Swing dan mengikuti struktur paket modular untuk memisahkan fungsi berdasarkan peran pengguna:
 
-*   **Admin Module:** Handles user management, ticket inventory (CRUD operations), and system dashboard oversight.
-*   **Staff (Pegawai) Module:** Provides operational forms for managing day-to-day ticketing tasks and verifying passenger information.
-*   **Passenger (Penumpang) Module:** Features an interactive interface for searching, booking tickets, and viewing booking history. Includes secure user registration and login.
+*   **Modul Admin:** Mengelola manajemen pengguna, inventaris tiket (operasi CRUD), dan pengawasan dasbor sistem.
+*   **Modul Pegawai:** Menyediakan formulir operasional untuk mengelola tugas pertiketan sehari-hari dan memverifikasi informasi penumpang.
+*   **Modul Penumpang:** Menampilkan antarmuka interaktif untuk pencarian tiket, pemesanan tiket, dan melihat riwayat pemesanan. Dilengkapi dengan registrasi pengguna dan sistem login yang aman.
 
-## Technical Stack
+## Teknologi yang Digunakan
 
-*   **Language:** Java (JDK 8+)
-*   **GUI Framework:** Java Swing
-*   **Database:** MySQL / MariaDB
-*   **Database Connectivity:** JDBC (MySQL Connector/J)
-*   **Security:** SHA-256 Hashing for credential protection
+*   **Bahasa Pemrograman:** Java (JDK 8+)
+*   **Framework GUI:** Java Swing
+*   **Basis Data:** MySQL / MariaDB
+*   **Konektivitas Basis Data:** JDBC (MySQL Connector/J)
+*   **Keamanan:** Hashing SHA-256 untuk perlindungan kata sandi
 *   **Build Tool:** Ant (NetBeans)
 
-## Setup and Installation
+## Instalasi dan Persiapan
 
-1.  **Clone the Repository:**
+1.  **Kloning Repositori:**
     ```bash
-    git clone <your-repository-url>
+    git clone <url-repositori-anda>
     ```
 
-2.  **Database Configuration:**
-    *   Import the `kai.sql` file located in the root directory into your MySQL server.
-    *   Update the database connection credentials in `A-BANG/src/Admin/DatabaseConnection.java` to match your local database setup.
+2.  **Konfigurasi Basis Data:**
+    *   Impor file `kai.sql` yang berada di direktori utama ke dalam server MySQL Anda.
+    *   Perbarui kredensial koneksi basis data di file `A-BANG/src/Admin/DatabaseConnection.java` agar sesuai dengan pengaturan basis data lokal Anda.
 
-3.  **Build and Run:**
-    *   Open the `A-BANG` folder as a project in NetBeans IDE.
-    *   Ensure the MySQL Connector/J library is added to the project's libraries.
-    *   Clean and Build the project.
-    *   Execute `Login.java` in the `Admin` package to start the application.
+3.  **Build dan Jalankan:**
+    *   Buka folder `A-BANG` sebagai proyek di NetBeans IDE.
+    *   Pastikan library MySQL Connector/J telah ditambahkan ke dalam library proyek.
+    *   Lakukan proses *Clean and Build* pada proyek.
+    *   Jalankan file `Login.java` yang berada di dalam paket `Admin` untuk memulai aplikasi.
 
 ## Deployment
 
-The project includes an installer configuration. Setup files can be found in the `A-BANG-SetupFiles` directory to install the application as a native Windows executable (.msi).
+Proyek ini mencakup konfigurasi installer. File setup dapat ditemukan di direktori `A-BANG-SetupFiles` untuk menginstal aplikasi sebagai executable native Windows (.msi).
 
-## License
+## Lisensi
 
-This project is licensed under the MIT License.
+Proyek ini dilisensikan di bawah Lisensi MIT.
